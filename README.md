@@ -71,6 +71,33 @@ sportsamigo/
 ├── app.js           # Main application
 └── package.json     # Dependencies
 ```
+## Utility Scripts
+
+The project includes these helpful utility scripts:
+
+### Database Utilities
+- `check-mongodb-status.js` - Verifies MongoDB connection status
+  ```bash
+  node check-mongodb-status.js
+  ```
+
+- `validate-mongodb-structure.js` - Validates database schema and indexes
+  ```bash
+  node validate-mongodb-structure.js
+  ```
+
+### Admin Management
+- `create-admin-quick.js` - Creates default admin user
+  ```bash
+  ADMIN_PASSWORD=yourpassword node create-admin-quick.js
+  ```
+
+- `fix-admin-user.js` - Resets admin user account
+  ```bash
+  ADMIN_PASSWORD=newpassword node fix-admin-user.js
+  ```
+
+> Note: These scripts use environment variables for security. Add them to `.gitignore` if they contain sensitive data.
 
 ## API Endpoints
 
