@@ -1,6 +1,8 @@
-const User = require('./schemas/userSchema');
+// Import the already-compiled User model from schema
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
+const userSchema = require("./schemas/userSchema");
+const User = mongoose.models.User || mongoose.model("User", userSchema);
 
 /**
  * User model

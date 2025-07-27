@@ -11,4 +11,4 @@ module.exports = {
     PlayerProfile: require('./playerProfile'),
     Registration: require('./registration'),
     Template: require('./template')
-}; 
+};
